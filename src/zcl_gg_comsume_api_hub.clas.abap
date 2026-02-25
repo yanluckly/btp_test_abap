@@ -17,13 +17,13 @@ ENDCLASS.
 
 
 
-CLASS zcl_gg_comsume_api_hub IMPLEMENTATION.
-
+CLASS ZCL_GG_COMSUME_API_HUB IMPLEMENTATION.
 
 
   METHOD constructor.
     go_http = cl_web_http_client_manager=>create_by_http_destination( i_destination = cl_http_destination_provider=>create_by_url( gv_web ) ).
   ENDMETHOD.
+
 
   METHOD get_country_details.
     DATA(lo_req) = go_http->get_http_request(  ).
@@ -56,5 +56,4 @@ CLASS zcl_gg_comsume_api_hub IMPLEMENTATION.
     ENDTRY.
 
   ENDMETHOD.
-
 ENDCLASS.

@@ -11,7 +11,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_gg_test_http_serv02 IMPLEMENTATION.
+CLASS ZCL_GG_TEST_HTTP_SERV02 IMPLEMENTATION.
 
 
   METHOD if_http_service_extension~handle_request.
